@@ -13,19 +13,15 @@ sudo usermod --shell $(which zsh) $USER
 echo "OK!"
 
 echo "Installing ZSF Autosuggestions!"
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 echo "Installed!"
 
-echo "Installing almostontop ZSH Plugin!"
-source almostontop.plugin.zsh
+echo "Installing almostontop!"
+git clone https://github.com/Valiev/almostontop.git ~/.oh-my-zsh/custom/plugins/almostontop
 echo "Installed!"
-
-echo "Loading gnome-terminal.donf!"
-dconf load /org/gnome/terminal/legacy/profiles:/ < gnome-terminal.donf
-echo "OK"
 
 echo "By copying .zshrc!"
-sudo mv .zshrc $HOME/.zshrc
+sudo cp .zshrc $HOME/.zshrc
 echo "OK"
 
 echo "Done....."

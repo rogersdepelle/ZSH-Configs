@@ -74,6 +74,7 @@ docker
 docker-compose
 python
 zsh-autosuggestions
+almostontop
 )
 
 source $ZSH/oh-my-zsh.sh
