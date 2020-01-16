@@ -1,4 +1,5 @@
 # ZSH-Configs
- Script to install and configure my zsh
+Script to install and configure my zsh
 
-Tilix Colors: https://github.com/storm119/Tilix-Themes/blob/master/Themes.md
+### almostontop zsh plugin
+https://github.com/Valiev/almostontop

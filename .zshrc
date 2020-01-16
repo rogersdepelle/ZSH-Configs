@@ -2,22 +2,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/julian/.oh-my-zsh"
+export ZSH="/home/rogers/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_MODE="nerdfont-complete"
-
-POWERLEVEL9K_DISABLE_RPROMPT=true
-
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_ubuntu_icon dir vcs)
-
-POWERLEVEL9K_CUSTOM_UBUNTU_ICON="echo "
-POWERLEVEL9K_CUSTOM_UBUNTU_ICON_BACKGROUND=234
-POWERLEVEL9K_CUSTOM_UBUNTU_ICON_FOREGROUND=202
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -78,19 +69,11 @@ POWERLEVEL9K_CUSTOM_UBUNTU_ICON_FOREGROUND=202
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git
-	dnf
-	zsh-syntax-highlighting
-	zsh-autosuggestions
-	docker
-	extract
-	history
-	pip
-	pylint
-	python
-	vscode
-	web-search
-	bgnotify
+git
+docker
+docker-compose
+python
+zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
