@@ -20,6 +20,10 @@ echo "Installing almostontop!"
 git clone https://github.com/Valiev/almostontop.git ~/.oh-my-zsh/custom/plugins/almostontop
 echo "Installed!"
 
+echo "Installing gnome terminal confs!"
+dconf load /org/gnome/terminal/legacy/profiles:/ < gnome-terminal-profiles.dconf
+echo "Installed!"
+
 echo "By copying .zshrc!"
 sudo cp .zshrc $HOME/.zshrc
 echo "OK"
